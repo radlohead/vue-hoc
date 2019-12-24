@@ -3,6 +3,7 @@ import axios from "axios";
 
 export const withRequest = url => component => {
   return Vue.component("withRequest", {
+    props: [...component.props],
     data() {
       return {
         fetchData: null
@@ -15,6 +16,7 @@ export const withRequest = url => component => {
     render(createElement) {
       return createElement(component, {
         props: {
+          id: this.$props.id,
           data: this.fetchData
         }
       });

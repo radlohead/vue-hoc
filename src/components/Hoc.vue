@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>vue hoc</h1>
-    <Post />
+    <Post :id="1" />
   </div>
 </template>
 

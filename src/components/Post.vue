@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div>{{ data }}</div>
+    <div>id: {{ id }}</div>
+    <div>data: {{ data }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["data"]
+  props: ["id", "data"]
 };
 </script>
